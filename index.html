@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fisiodomus</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="Keywords" content="Fisodomus-dadefinire">
+		<meta name="Description" content="Fisodomus - Servizi di Fisioterapia a domicilio">
+		<link rel="icon" href="./image/main/LogoIcona.png" type="image/png">
+		<style type="text/css">.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}</style>
+		<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+		<style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}</style>
+		<style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style>
+		<style type="text/css">.gm-style{font-family:Roboto,Arial,sans-serif;font-size:11px;font-weight:400;text-decoration:none}.gm-style img{max-width:none}</style>
+
+		<link rel="stylesheet" href="./css/w3.css">
+		<link rel="stylesheet" href="./css/ripple.css">
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="./css/w3-theme-dark-grey.css">
+		<style>
+			.test img {cursor: pointer;border: 10px solid transparent;}
+			.test img:hover {border: 10px solid #f1f1f1;}
+			.w3-topnav a:first-child:hover{color: #009688;border-bottom: 3px solid transparent;}
+			.w3-topnav a:last-child:hover{color: #009688;border-bottom: 3px solid transparent;}
+			/* static topnav for screens below 601px width */
+			@media only screen and (max-width: 601px) {.w3-topnav {position:static;}}
+			@media (max-width:650px){.hide-customs{display:none !important}}
+			@media (min-width:650px){.hide-customl{display:none !important}}
+		</style>
+
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script src="./js/app.js"></script>
+	</head>
+
+	<body id="fisoDomusPage">
+
+	<header class="w3-theme w3-card-4 w3-top">
+		<img src="./image/main/HeaderTitle.png" alt="FisioDomus">
+		<!-- Topnav -->
+		<nav class="w3-topnav w3-right w3-padding-16">
+			<a href="#fisoDomusPage" class="hide-customs" title="Home"><i class="fa fa-home w3-large"></i></a>
+			<a href="#ourteam" class="hide-customs">Chi siamo</a>
+			<a href="#treatment" class="hide-customs">Trattamenti</a>
+			<a href="#workingArea" class="hide-customs">Dove operiamo</a>
+			<a href="#costs" class="hide-customs">Tariffe</a>
+			<a href="#contactus" class="hide-customs">Contattaci</a>
+			<a href="#partners" class="hide-customs">Partners</a>
+			<a href="javascript:void(0)" onclick="w3_open()" class="hide-customl" title="Menu"><i class="fa fa-bars w3-large"></i></a>
+		</nav>
+		<nav class="w3-sidenav w3-card-2 w3-theme" style="right:0; display:none;">
+			<a href="#fisoDomusPage" onclick="w3_close()" title="Home"><i class="fa fa-home w3-large w3-center" style="width: 27px;"></i>Home</a>
+			<a href="#ourteam" onclick="w3_close()"><i class="fa fa-users w3-large w3-center" style="width: 27px;"></i>Chi siamo</a>
+			<a href="#treatment" onclick="w3_close()"><i class="fa fa-medkit w3-large w3-center" style="width: 27px;"></i>Trattamenti</a>
+			<a href="#workingArea" onclick="w3_close()"><i class="fa fa-map-marker w3-large w3-center" style="width: 27px;"></i>Dove operiamo</a>
+			<a href="#costs" onclick="w3_close()"><i class="fa fa-calculator w3-large w3-center" style="width: 27px;"></i>Tariffe</a>
+			<a href="#contactus" onclick="w3_close()"><i class="fa fa-commenting-o w3-large w3-center" style="width: 27px;"></i>Contattaci</a>
+			<a href="#partners" onclick="w3_close()"><i class="fa fa-share-alt w3-large w3-center" style="width: 27px;"></i>Partners</a>
+		</nav>
+	</header>
+
+
+
+	<div class="w3-image w3-animate-opacity">
+		<img src="./image/main/bg.jpg" alt="boat" style="width:100%;min-height:550px;max-height:700px;">
+		<div class="w3-title w3-margin-64">
+			<h5 class="w3-animate-opacity w3-padding w3-large w3-theme">Info e prenotazioni 3387041817 -  info@fisiodomus.it</h2>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div id="id01" class="w3-modal">
+		<div class="w3-modal-content w3-card-8 w3-animate-top">
+			<header class="w3-container w3-teal">
+			<span onclick="document.getElementById(&#39;id01&#39;).style.display=&#39;none&#39;" class="w3-closebtn">×</span>
+			<h4>Oh snap! We just showed you a modal..</h4>
+				<h5>Because we can <i class="fa fa-smile-o"></i></h5>
+			</header>
+			<div class="w3-container">
+				<p>Cool huh? Ok, enough teasing around..</p>
+				<p>Go to our <a class="w3-btn" href="http://www.w3schools.com/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
+			</div>
+			<footer class="w3-container w3-teal">
+				<p>Modal footer</p>
+			</footer>
+		</div>
+	</div>
+
+	<!-- Container -->
+	<div id="ourteam" class="w3-container w3-padding-64 w3-center">
+		<h2>Fisiodomus: fisioterapisti, liberi professionisti e un servizio privato d’eccellenza</h2>
+
+		<div class="w3-row w3-padding-4">
+			<div class="w3-third">
+				<div class="w3-container" style="position: relative;">
+					<a href="https://www.linkedin.com/in/matteo-morara-21180121" title="Dott. Poggiali Emanuele" target="_blank"><img src="./image/chisiamo/AvatarEliaVilla.jpg" alt="Presidente" style="width:40%" class="w3-btn w3-circle w3-padding-0"></a>
+					<img src="./image/chisiamo/aifi.jpg" alt="Presidente" style="width: 15%;position: absolute;right: 27%;top: 66%;" class="w3-circle">
+				</div>
+				<h3>Dott. Poggiali Emanuele</h3>
+				<p>Fondatore e Presidente</p>
+				<p>Socio A.I.Fi. Nr: 033698</p>
+			</div>
+
+			<div class="w3-third">
+				<div class="w3-container" style="position: relative;">
+					<a href="https://it.linkedin.com/in/elia-villa-b6927360" title="Dott. Villa Elia" target="_blank"><img src="./image/chisiamo/AvatarEliaVilla.jpg" alt="Presidente" style="width:40%" class="w3-btn w3-circle w3-padding-0"></a>
+					<img src="./image/chisiamo/aifi.jpg" alt="Presidente" style="width: 15%;position: absolute;right: 27%;top: 66%;" class="w3-circle">
+				</div>
+				<h3>Dott. Villa Elia</h3>
+				<p>Fondatore e Vice Presidente</p>
+				<p>Socio A.I.Fi. Nr: 033698</p>
+			</div>
+
+			<div class="w3-third">
+				<div class="w3-container" style="position: relative;">
+					<a href="https://www.linkedin.com/in/matteo-morara-21180121" title="Dott. Morara Matteo" target="_blank"><img src="./image/chisiamo/AvatarEliaVilla.jpg" alt="Presidente" style="width:40%" class="w3-btn w3-circle w3-padding-0"></a>
+					<img src="./image/chisiamo/aifi.jpg" alt="Presidente" style="width: 15%;position: absolute;right: 27%;top: 66%;" class="w3-circle">
+				</div>
+				<h3>Dott. Morara Matteo</h3>
+				<p>Fondatore e Segretario</p>
+				<p>Socio A.I.Fi. Nr: 033698</p>
+			</div>
+		</div>
+
+		<hr class="w3-padding-tiny">
+		<h2>Perch&egrave; fisioterapia a domicilio</h2>
+		<div class="w3-row-padding" style="word-wrap: break-word;">
+			<div class="w3-col m4 l2 w3-padding-4">
+				<div class="w3-card-2 w3-padding-small w3-theme-l3">
+					<p>Rapporto diretto tra assistito e fisioterapista</p>
+		     	</div>
+			</div>
+			<div class="w3-col m4 l2 w3-padding-4">
+				<div class="w3-card-2 w3-padding-small w3-theme-l3">
+					<p>Eliminazione costi di intermediazione</p>
+		     	</div>
+			</div>
+			<div class="w3-col m4 l2 w3-padding-4">
+				<div class="w3-card-2 w3-padding-small w3-theme-l3">
+					<p>Riduzione costi ricovero in strutture private</p>
+		     	</div>
+			</div>
+			<div class="w3-col m4 l2 w3-padding-4">
+				<div class="w3-card-2 w3-padding-small w3-theme-l3">
+					<p>Recupero autonomie nel proprio ambiente</p>
+		     	</div>
+			</div>
+			<div class="w3-col m4 l2 w3-padding-4">
+				<div class="w3-card-2 w3-padding-small w3-theme-l3">
+					<p>Possibile coinvolgimento delle famiglie</p>
+		     	</div>
+			</div>
+			<div class="w3-col m4 l2 w3-padding-4">
+				<div class="w3-card-2 w3-padding-small w3-theme-l3">
+					<p>Lotta all'abusivismo professionale</p>
+		     	</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Row -->
+	<div id="treatment" class="w3-row-padding w3-padding-64 w3-theme-l5">
+		<h2>Trattamenti</h2>
+		<div class="w3-container w3-white" style="padding:16px 20% !important;">
+			<img src=".\image\trattamenti\WordleFisiodomus.png" style="width:100%; max-height: 350px;">
+		</div>
+		<div class="w3-container w3-white w3-padding">
+			<div class="w3-row-padding"  style="padding-left: 8%;">
+				<div class="w3-quarter">
+					<p><i class="fa fa-leaf"></i> Riabilitazione post traumatica</p>
+				</div>
+				<div class="w3-quarter">
+					<p><i class="fa fa-leaf"></i> Riabilitazione post chirurgica</p>
+				</div>
+				<div class="w3-quarter">
+					<p><i class="fa fa-leaf"></i> Riabilitazione neuromotoria</p>
+				</div>
+				<div class="w3-quarter">
+					<p><i class="fa fa-leaf"></i> Riabilitazione funzionale</p>
+				</div>
+			</div>
+			<div class="w3-row-padding" style="padding-left: 8%;">
+				<div class="w3-quarter">
+					<p><i class="fa fa-leaf"></i> Terapia Manuale</p>
+				</div>
+				<div class="w3-quarter">
+					<p><i class="fa fa-leaf"></i> Terapia occupazionale</p>
+				</div>
+				<div class="w3-quarter">
+					<p><i class="fa fa-leaf"></i> Massoterapia</p>
+				</div>
+				<div class="w3-quarter">
+					<p><i class="fa fa-leaf"></i> Chinesiterapia</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Container -->
+	<div id="workingArea" class="w3-container w3-padding-64">
+		<h2>Dove operiamo</h2>
+		<p>Con sede a Imola copriamo tutta l'area est della provincia di Bologna</p>
+		<!-- Canvas for Maps -->
+		<div id="mapCanvas" style="width: 100%; height: 420px;"></div>
+	</div>
+
+	<!-- Container -->
+	<div id="costs"  class="w3-container w3-padding-64 w3-theme-l5">
+		<h2 class="w3-padding-bottom">Tariffe</h2>
+
+		<table class="w3-table w3-striped w3-bordered w3-border w3-white">
+			<thead class="w3-teal">
+				<tr>
+					<th>Prestazione</th><th  class="w3-right-align">Durata (min)</th><th  class="w3-right-align">Compenso (&euro;)</th>
+				</tr>
+			</thead>
+			 <tbody>
+				<tr>
+					<td>Riabilitazione domiciliare</td><td class="w3-right-align">50'</td><td class="w3-right-align">45,00</td>
+				</tr>
+				<tr>
+					<td>Extra kilometraggio (&gt;20Km)</td><td class="w3-right-align"></td><td class="w3-right-align">5,00</td>
+				</tr>
+				<tr>
+					<td>Valutazione fisioterpica</td><td class="w3-right-align">15'</td><td class="w3-right-align">15,00</td>
+				</tr>
+				<tr>
+					<td>Massoterapia</td><td class="w3-right-align">30'</td><td class="w3-right-align">30,00</td>
+				</tr>
+				<tr>
+					<td>Elettroterapia</td><td class="w3-right-align">giornaliero</td><td class="w3-right-align">5,00</td>
+				</tr>
+				<tr>
+					<td>Magnetoterapia</td><td class="w3-right-align">giornaliero</td><td class="w3-right-align">6,00</td>
+				</tr>
+				<tr>
+					<td>Kinesiotape</td><td class="w3-right-align"></td><td class="w3-right-align">10,00</td>
+				</tr>
+				<tr>
+					<td>Taping funzionale</td><td class="w3-right-align"></td><td class="w3-right-align">8,00</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>I compensi comprendono il 4% di rivalsa INPS</p>
+		<p>Esclusa imposta di bollo</p>
+	</div>
+
+	<!-- Container -->
+	<div id="contactus" class="w3-container w3-padding-64">
+		<h2 class="w3-padding-bottom">Contattaci</h2>
+		<div class="w3-row">
+			<div class="w3-col m5">
+				<h3>Associazione professionale Fisiodomus</h3>
+				<h3>Viale A. Costa, 62</h3>
+				<p>Swing by for a cup of coffee, or whatever.</p>
+				<p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;Imola, Italy</p>
+				<p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;+39 328 7397211</p>
+				<p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;info@fisiodomus.it</p>
+			</div>
+			<!--<div class="w3-col m7">
+				<form class="w3-form">
+					<div class="w3-input-group">
+						<input class="w3-input" style="width:100%;" type="text" required="">
+						<label class="w3-label w3-validate">Name</label>
+					</div>
+					<div class="w3-input-group">
+						<input class="w3-input" style="width:100%;" type="text" required="">
+						<label class="w3-label w3-validate">Email</label>
+					</div>
+					<div class="w3-input-group">
+						<textarea class="w3-input" style="width:100%;"></textarea>
+						<label class="w3-label">Subject</label>
+					</div>
+					<input class="w3-check" type="checkbox" checked="checked">
+					<label class="w3-validate">I Like it!</label>
+					<button type="button" class="w3-btn w3-right w3-theme">Send</button>
+				</form>
+			</div>-->
+		</div>
+	</div>
+
+	<div id="partners" class="w3-container w3-padding-64 w3-theme-l5">
+		<h3>I nostri partners</h3>
+		<br/>
+		<div class="w3-row-padding">
+			<div class="w3-col m2">
+				<a href="http://aifi.net/" title="A.I.Fi." target="_blank"><img src=".\image\partners\aifi.jpg" class="img-responsive" style="width:100%" alt="A.I.FI."><a>
+				<p>A.I.FI.</p>
+			</div>
+			<div class="w3-col m2">
+				<a href="http://www.ilmelogranoimola.it/" title="Il melograno" target="_blank"><img src=".\image\partners\IlMelograno.png" class="img-responsive" style="width:100%" alt="Il melograno"><a>
+				<p>Il Melograno</p>
+			</div>
+			<!--<div class="w3-col m2">
+				<img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+				<p>Partner 3</p>
+			</div>
+			<div class="w3-col m2">
+				<img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+				<p>Partner 4</p>
+			</div>
+			<div class="w3-col m2">
+				<img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+				<p>Partner 5</p>
+			</div>
+			<div class="w3-col m2">
+				<img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+				<p>Partner 6</p>
+			</div>-->
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="w3-container w3-padding-16 w3-theme w3-center w3-small">
+		<h4>Follow Us <a class="w3-btn-floating w3-teal" href="https://www.facebook.com/fisiodomus.fisioterapiaadomicilio" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></h4>
+		<p>Associazione professionale Fisiodomus<br/>
+			Viale A. Costa, 62 - 40026 Imola (BO) - Italy <br/>
+			Tel. +39 328 7397211 - info@fisiodomus.it<br/>
+			C.F. 90050200378
+		</p>
+		<p>©2016 Associazione professionale Fisiodomus</p>
+
+		<div id="GoTopBtn" style="position:relative;bottom:130px;z-index:1;" class="w3-tooltip w3-right">
+			<span class="w3-text w3-padding w3-teal">Go To Top</span>
+			<a class="w3-btn w3-theme" href="#fisoDomusPage"><span class="w3-xlarge">
+			<i class="fa fa-chevron-circle-up"></i></span></a>
+		</div>
+	</footer>
+	</body>
+</html>
