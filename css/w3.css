@@ -34,8 +34,8 @@ legend{border:0;padding:0}
 textarea{overflow:auto}
 optgroup{font-weight:bold}
 /* End extract from normalize.css */
-html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}
-h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}
+html,body{font-family:"Open Sans",Verdana,sans-serif;font-size:15px;line-height:1.5}
+h1,h2,h3,h4,h5,h6{font-family:"Open Sans",Arial,sans-serif;font-weight:400;margin:10px 0}
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}
 h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
 hr{height:0;border:0;border-top:1px solid #eee;margin:20px 0}
@@ -176,8 +176,8 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .w3-xlarge{font-size:24px !important}
 .w3-xxlarge{font-size:36px !important}
 .w3-xxxlarge{font-size:48px !important}
-.w3-slim{font-family:"Segoe UI",Arial,sans-serif !important}
-.w3-wide{font-family:"Segoe UI",Arial,sans-serif !important;letter-spacing:4px}
+.w3-slim{font-family:"Open Sans",Arial,sans-serif !important}
+.w3-wide{font-family:"Open Sans",Arial,sans-serif !important;letter-spacing:4px}
 .w3-jumbo{font-size:64px !important}
 .w3-left-align{text-align:left !important}.w3-right-align{text-align:right !important}
 .w3-justify{text-align:justify !important}
