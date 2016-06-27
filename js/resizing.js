@@ -35,11 +35,11 @@ function fullScreen(event) {
 
     // Determine whether width or height should be 100%
     var domElements = document.querySelectorAll("[data-fullscreen=true]");
-
-    domElements.forEach(function (domElement) {
-        var showNext = 0;
-        if (fullHeight > adaptiveFullScreenThreshold) showNext = 120;
-        domElement.style.height = fullHeight - showNext + "px";
-    });
-
+    if (domElements && domElements.length > 0) {
+        for (i = 0; i < domElements.length; i++) {
+			var showNext = 0;
+			if (fullHeight > adaptiveFullScreenThreshold) showNext = 120;
+			domElements[i].style.height = fullHeight - showNext + "px";
+		}
+	}
 }
