@@ -4,9 +4,7 @@ var adaptiveFullScreenThreshold = 768;
 
 function heightsEqualizer(event) {
     var elements = document.querySelectorAll("[data-equalizeHeight=true]"),
-        max_height = 0,
-        len = 0,
-        i;
+        max_height = 0, len = 0, i;
 
     if (elements && elements.length > 0) {
         len = elements.length;
@@ -37,9 +35,9 @@ function fullScreen(event) {
     var domElements = document.querySelectorAll("[data-fullscreen=true]");
     if (domElements && domElements.length > 0) {
         for (i = 0; i < domElements.length; i++) {
-			var showNext = 0;
-			if (fullHeight > adaptiveFullScreenThreshold) showNext = 120;
-			domElements[i].style.height = fullHeight - showNext + "px";
-		}
-	}
+            var showNext = 0;
+            if (fullHeight > adaptiveFullScreenThreshold) showNext = 120;
+            domElements[i].style.height = fullHeight - showNext + "px";
+        }
+    }
 }
