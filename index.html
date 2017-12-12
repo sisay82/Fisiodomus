@@ -1,12 +1,83 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Fisiodomus</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="fisiodomus,fisioterapia,fisioterapista,fisioterapisti,domicilio,casa,abitazione,riabilitazione,massaggio,riattivazioni,AIFi,libero professionista,professionale,riattivazione,post intervento,fisioterapia domiciliare,recupero motorio,post chirurgico,deambulazione,sindrome,allettamento,deficit,post trauma,terapia,manuale,evidence based medicine,EBM,decontratturante,esercizio,terapeutico,post intervento,programma esercizi,sensibilizzazione,ausilio,ausili,presidi,posture,letto,decubito,rischio caduta,salute,benessere,lombalgia,stress,dolore,fratture,infiammazione">
-    <meta name="Description" content="Fisodomus - Servizi di Fisioterapia a domicilio">
+    <meta name="keywords" content="fisiodomus,fisioterapia,fisioterapista,fisioterapisti,domicilio,imola,bologna,budrio,emilia,romagna,casa,abitazione,riabilitazione,massaggio,riattivazioni,AIFi,libero professionista,professionale,riattivazione,post intervento,fisioterapia domiciliare,recupero motorio,post chirurgico,deambulazione,sindrome,allettamento,deficit,post trauma,terapia,manuale,evidence based medicine,EBM,decontratturante,esercizio,terapeutico,post intervento,programma esercizi,sensibilizzazione,ausilio,ausili,presidi,posture,letto,decubito,rischio caduta,salute,benessere,lombalgia,stress,dolore,fratture,infiammazione">
+    <meta name="description" content="Fisodomus - Servizi di Fisioterapia a domicilio - Info e appuntamenti 3917057924 - info@fisiodomus.it">
+    <meta name="author" content="Michele Geri">
     <link rel="icon" href="./image/main/LogoIcona.png" type="image/png">
+
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700">
+    <link type="text/css" rel="stylesheet" href="./css/w3.css">
+    <link type="text/css" rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="./css/w3-theme-dark-grey.css">
+    <style type="text/css">
+        /* BOTTOM */
+        .fd-animate-zoom {position: relative;-webkit-animation-name: zoom;-webkit-animation-duration: 0.5s;animation-name: zoom;animation-duration: 0.5s;}
+        @-webkit-keyframes zoom {
+            from {zoom: 0%;opacity: 0;}
+            to {zoom: 100%;opacity: 1;}
+        }
+
+        @keyframes zoom {
+            from {zoom: 0%;opacity: 0;}
+            to {zoom: 100%;opacity: 1;}
+        }
+
+        @-webkit-keyframes opacReverse {
+            from {opacity: 1;}
+            to {opacity: 0;}
+        }
+
+        @keyframes opacReverse {
+            from {opacity: 1;}
+            to {opacity: 0;}
+        }
+
+        #homeBG {background-image: url(./image/main/bg.jpg);background-repeat: no-repeat;background-size: cover;background-position: left bottom;}
+        [data-fullscreen=true] { height: 45.8vw; }
+        .w3-topnav a:first-child:hover {color: #009fe3;border-bottom: 3px solid transparent;}
+        .w3-topnav a:last-child:hover {color: #009fe3;border-bottom: 3px solid transparent;}
+        .w3-image .fd-title {left: 4px;bottom: 8px;position: absolute;color: #000;font-size: 20px;}
+            .w3-image .fd-title .homelogo {opacity: 0;display: none;}
+        .fd-theme {color: #fff !important;background-color: #616161 !important;}
+        .fd-text-accent{color:#009fe3 !important}.fd-accent{color:#fff !important;background-color:#009fe3 !important}
+        .fd-xxlarge {font-size: 24px !important;}
+        .fd-xlarge {font-size: 18px !important;}
+
+        @media (min-width: 1440px) {
+            .w3-image .fd-title .homelogo {width: 45%;}
+            .fd-xxlarge {font-size: 36px !important;}
+            .fd-xlarge {font-size: 24px !important;}
+        }
+        @media (min-width: 768px) {
+            .w3-image .fd-title .homelogo {width: 700px;}
+            .fd-xxlarge {font-size: 36px !important;}
+            .fd-xlarge {font-size: 24px !important;}
+        }
+        @media (min-width: 435px) {
+            .w3-image .fd-title .homelogo {width: 600px;}
+        }
+        @media (min-height: 620px) {
+            .w3-image .fd-title {left: 0px;padding: 2px 5px;width: 100%;background-color: rgba(255, 255, 255, 0.80);}
+                .w3-image .fd-title .homelogo {opacity: 1;display: inline-block;}
+            .fd-theme {color: #000000 !important;background-color: transparent !important;}
+        }
+
+        /* static topnav for screens below 601px width */
+        @media only screen and (max-width: 601px) {
+            .w3-topnav {position: static;}
+        }
+        @media only screen and (max-width:977px) {
+            .hide-customs {display: none !important;}
+        }
+        @media only screen and (min-width:978px) {
+            .hide-customl {display: none !important;}
+
+        }
+    </style>
     <style type="text/css">
         .gm-style .gm-style-mtc label, .gm-style .gm-style-mtc div {
             font-weight: 400;
@@ -42,208 +113,28 @@
                 max-width: none;
             }
     </style>
-    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700">
-    <link type="text/css" rel="stylesheet" href="./css/w3.css">
-    <link type="text/css" rel="stylesheet" href="./css/ripple.css">
-    <link type="text/css" rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link type="text/css" rel="stylesheet" href="./css/w3-theme-dark-grey.css">
-    <style>
-        /* BOTTOM */
-        .fd-animate-zoom {
-            position: relative;
-            -webkit-animation-name: zoom;
-            -webkit-animation-duration: 0.5s;
-            animation-name: zoom;
-            animation-duration: 0.5s;
-        }
-
-        @-webkit-keyframes zoom {
-            from {
-                zoom: 0%;
-                opacity: 0;
-            }
-
-            to {
-                zoom: 100%;
-                opacity: 1;
-            }
-        }
-
-        @keyframes zoom {
-            from {
-                zoom: 0%;
-                opacity: 0;
-            }
-
-            to {
-                zoom: 100%;
-                opacity: 1;
-            }
-        }
-
-        @-webkit-keyframes opacReverse {
-            from {
-                opacity: 1;
-            }
-
-            to {
-                opacity: 0;
-            }
-        }
-
-        @keyframes opacReverse {
-            from {
-                opacity: 1;
-            }
-
-            to {
-                opacity: 0;
-            }
-        }
-
-        #homeBG {
-            background-image: url(./image/main/bg.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: left bottom;
-        }
-
-        .w3-topnav a:first-child:hover {
-            color: #009688;
-            border-bottom: 3px solid transparent;
-        }
-
-        .w3-topnav a:last-child:hover {
-            color: #009688;
-            border-bottom: 3px solid transparent;
-        }
-
-        .w3-image .fd-title {
-            left: 4px;
-            bottom: 8px;
-            position: absolute;
-            color: #fff;
-            font-size: 20px;
-        }
-
-            .w3-image .fd-title .homelogo {
-                opacity: 0;
-                display: none;
-            }
-
-        .headerlogo {
-            opacity: 1;
-        }
-
-        .fd-theme {
-            color: #fff !important;
-            background-color: #616161 !important;
-        }
-
-        .fd-xxlarge {
-            font-size: 24px !important;
-        }
-
-        .fd-xlarge {
-            font-size: 18px !important;
-        }
-
-        @media (min-width: 1440px) {
-            .w3-image .fd-title .homelogo {
-                width: 45%;
-            }
-
-            .fd-xxlarge {
-                font-size: 36px !important;
-            }
-
-            .fd-xlarge {
-                font-size: 24px !important;
-            }
-        }
-
-        @media (min-width: 768px) {
-            .w3-image .fd-title .homelogo {
-                width: 700px;
-            }
-
-            .fd-xxlarge {
-                font-size: 36px !important;
-            }
-
-            .fd-xlarge {
-                font-size: 24px !important;
-            }
-        }
-
-        @media (min-width: 435px) {
-            .w3-image .fd-title .homelogo {
-                width: 600px;
-            }
-        }
-
-        @media (min-height: 620px) {
-            .w3-image .fd-title {
-                left: 0px;
-                padding: 2px 5px;
-                width: 100%;
-                background-color: rgba(7, 23, 50, 0.55);
-            }
-
-                .w3-image .fd-title .homelogo {
-                    opacity: 1;
-                    display: inline-block;
-                }
-
-            .headerlogo {
-                opacity: 0;
-                display: none;
-            }
-
-            .fd-theme {
-                color: #fff !important;
-                background-color: transparent !important;
-            }
-        }
-
-        /* static topnav for screens below 601px width */
-        @media only screen and (max-width: 601px) {
-            .w3-topnav {
-                position: static;
-            }
-        }
-
-        @media only screen and (max-width:977px) {
-            .hide-customs {
-                display: none !important;
-            }
-        }
-
-        @media only screen and (min-width:978px) {
-            .hide-customl {
-                display: none !important;
-            }
-        }
-    </style>
 
     <!-- Angular js library -->
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <!-- google Maps library -->
-    <script src="http://maps.googleapis.com/maps/api/js"></script>
+
     <!-- custom library -->
-    <script src="./js/app.js"></script>
-    <script src="./js/resizing.js"></script>
-    <script src="./js/maps.js"></script>
-    <script src="./js/scrollSpy.js"></script>
     <script src="./js/whyFisioDomusController.js"></script>
+    <script src="./js/maps.js"></script>
+    <script src="./js/app.js" async defer></script>
+    <script src="./js/resizing.js" async defer></script>
+    <script src="./js/scrollSpy.js" async defer></script>
+
+    <!-- google Maps library -->
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDs0Cv6dii8E66v9PMu8XYtymft0K9-qgk&language=it&region=IT&callback=initMap" async defer></script>
+
+
 
 </head>
 <body id="fisoDomusPage" class="w3-white" data-ng-app="fisioDomusApp">
-    <header class="w3-theme w3-card-4 w3-top" data-spy="affix" data-headerlogo="logo" data-homelogo="homeLogo" data-placement="top" data-offset="10">
-        <a href="/"><img id="logo" class="headerlogo" src="./image/main/HeaderTitle.svg" alt="FisioDomus" style="padding: 7px 5px; height: 55px;" onerror="this.src='./image/main/HeaderTitle.png'; this.onerror=null;"></a>
+    <header class="w3-theme-light w3-card-4 w3-top">
+        <a href="/"><img id="logo" src="./image/main/HeaderTitle.svg" alt="FisioDomus" style="padding: 7px 5px; height: 55px;" onerror="this.src='./image/main/HeaderTitle.png'; this.onerror=null;"></a>
         <!-- Topnav -->
         <nav id="top-menu" class="w3-topnav w3-large w3-right w3-padding-16">
-            <a href="/" class="hide-customs" title="Home"><i class="fa fa-home w3-large"></i></a>
             <a href="#ourteam" class="hide-customs">Chi siamo</a>
             <a href="#treatment" class="hide-customs">Trattamenti</a>
             <a href="#workingArea" class="hide-customs">Dove operiamo</a>
@@ -252,14 +143,13 @@
             <a href="#partners" class="hide-customs">Partners</a>
             <a href="javascript:void(0)" onclick="w3_open()" class="hide-customl" title="Menu"><i class="fa fa-bars w3-large"></i></a>
         </nav>
-        <nav class="w3-sidenav w3-card-2 w3-theme" style="right:0; display:none;">
-            <a href="/" onclick="w3_close()" title="Home"><i class="fa fa-home w3-large w3-center" style="width: 27px;"></i>Home</a>
-            <a href="#ourteam" onclick="w3_close()"><i class="fa fa-users w3-large w3-center" style="width: 27px;"></i>Chi siamo</a>
-            <a href="#treatment" onclick="w3_close()"><i class="fa fa-medkit w3-large w3-center" style="width: 27px;"></i>Trattamenti</a>
-            <a href="#workingArea" onclick="w3_close()"><i class="fa fa-map-marker w3-large w3-center" style="width: 27px;"></i>Dove operiamo</a>
-            <a href="#costs" onclick="w3_close()"><i class="fa fa-calculator w3-large w3-center" style="width: 27px;"></i>Tariffe</a>
-            <a href="#contactus" onclick="w3_close()"><i class="fa fa-commenting-o w3-large w3-center" style="width: 27px;"></i>Contatti</a>
-            <a href="#partners" onclick="w3_close()"><i class="fa fa-share-alt w3-large w3-center" style="width: 27px;"></i>Partners</a>
+        <nav class="w3-sidenav w3-card-4 w3-animate-right w3-theme-light hide-customl" style="right:0; display:none;">
+            <a class="w3-large w3-padding-4" href="#ourteam" onclick="w3_close()"><i class="fa fa-users w3-large w3-center" style="width: 27px;"></i>Chi siamo</a>
+            <a class="w3-large w3-padding-4" href="#treatment" onclick="w3_close()"><i class="fa fa-medkit w3-large w3-center" style="width: 27px;"></i>Trattamenti</a>
+            <a class="w3-large w3-padding-4" href="#workingArea" onclick="w3_close()"><i class="fa fa-map-marker w3-large w3-center" style="width: 27px;"></i>Dove operiamo</a>
+            <a class="w3-large w3-padding-4" href="#costs" onclick="w3_close()"><i class="fa fa-calculator w3-large w3-center" style="width: 27px;"></i>Tariffe</a>
+            <a class="w3-large w3-padding-4" href="#contactus" onclick="w3_close()"><i class="fa fa-commenting-o w3-large w3-center" style="width: 27px;"></i>Contatti</a>
+            <a class="w3-large w3-padding-4" href="#partners" onclick="w3_close()"><i class="fa fa-share-alt w3-large w3-center" style="width: 27px;"></i>Partners</a>
         </nav>
     </header>
 
@@ -268,7 +158,7 @@
             <img id="homeLogo" class="homelogo" src="./image/main/HeaderTitle.svg" alt="FisioDomus" style="width: 700px;" onerror="this.src='./image/main/FullLogoHome.png'; this.onerror=null;">
 
             <h5 class="w3-animate-opacity w3-padding fd-xlarge fd-theme">
-                <span class="fd-xxlarge">Servizi di fisioterapia a domicilio</span><br />
+                <span class="fd-xxlarge">FISIOTERAPIA A DOMICILIO</span><br />
                 Info e appuntamenti 391&nbsp;7057924&nbsp;- info@fisiodomus.it
             </h5>
         </div>
@@ -283,7 +173,7 @@
                 </a>
             </div>
             <!-- Modal -->
-            <div id="whyFisiodomusPopup" class="w3-modal" style="display: block;" data-ng-show="showWhyFisioDomusDetail">
+            <div id="whyFisiodomusPopup" class="w3-modal" style="display:block;" data-ng-show="showWhyFisioDomusDetail">
                 <div class="w3-modal-content w3-card-8 fd-animate-zoom">
                     <header class="w3-container w3-theme-l4">
                         <span data-ng-click="hideDetail()" class="w3-closebtn">&times;</span>
@@ -306,29 +196,26 @@
         <div class="w3-row w3-padding-4">
             <div class="w3-third">
                 <div class="w3-container" style="position: relative;">
-                    <a href="https://www.facebook.com/emanuele.poggiali.7" title="Dott. Poggiali Emanuele" target="_blank"><img src="./image/chisiamo/AvatarEmanuelePoggiali.jpg" alt="Dott. Poggiali Emanuele" style="width:40%" class="w3-btn w3-circle w3-padding-0"></a>
+                    <img src="./image/chisiamo/AvatarEmanuelePoggiali.jpg" alt="Dott. Poggiali Emanuele" style="width:40%" class="w3-circle w3-padding-0">
                     <img src="./image/chisiamo/aifi.jpg" alt="Socio A.I.Fi. Nr: -" style="width: 15%;position: absolute;right: 27%;top: 66%;" class="w3-circle">
                 </div>
                 <h3>Dott. Poggiali Emanuele</h3>
-                <p>Fondatore e Presidente</p>
-                <p>Socio A.I.Fi. Nr: -</p>
+                <p>Socio A.I.Fi. Nr: 060626</p>
             </div>
             <div class="w3-third">
                 <div class="w3-container" style="position: relative;">
-                    <a href="https://it.linkedin.com/in/elia-villa-b6927360" title="Dott. Villa Elia" target="_blank"><img src="./image/chisiamo/AvatarEliaVilla.jpg" alt="Dott. Villa Elia" style="width:40%" class="w3-btn w3-circle w3-padding-0"></a>
+                    <img src="./image/chisiamo/AvatarEliaVilla.jpg" alt="Dott. Villa Elia" style="width:40%" class="w3-circle w3-padding-0">
                     <img src="./image/chisiamo/aifi.jpg" alt="Socio A.I.Fi. Nr: 04469" style="width: 15%;position: absolute;right: 27%;top: 66%;" class="w3-circle">
                 </div>
                 <h3>Dott. Villa Elia</h3>
-                <p>Fondatore e Vice Presidente</p>
                 <p>Socio A.I.Fi. Nr: 04469</p>
             </div>
             <div class="w3-third">
                 <div class="w3-container" style="position: relative;">
-                    <a href="https://www.linkedin.com/in/matteo-morara-21180121" title="Dott. Morara Matteo" target="_blank"><img src="./image/chisiamo/AvatarMatteoMorara.jpg" alt="Dott. Morara Matteo" style="width:40%" class="w3-btn w3-circle w3-padding-0"></a>
+                    <img src="./image/chisiamo/AvatarMatteoMorara.jpg" alt="Dott. Morara Matteo" style="width:40%" class="w3-circle w3-padding-0">
                     <img src="./image/chisiamo/aifi.jpg" alt="Socio A.I.Fi. Nr: 033698" style="width: 15%;position: absolute;right: 27%;top: 66%;" class="w3-circle">
                 </div>
                 <h3>Dott. Morara Matteo</h3>
-                <p>Fondatore e Segretario</p>
                 <p>Socio A.I.Fi. Nr: 033698</p>
             </div>
         </div>
@@ -402,7 +289,7 @@
     <div id="costs" class="w3-container w3-padding-64 w3-theme-l5">
         <h2 class="w3-padding-bottom">Tariffe</h2>
         <table class="w3-table w3-striped w3-bordered w3-border w3-white">
-            <thead class="w3-teal">
+            <thead class="fd-accent">
                 <tr>
                     <th>Prestazione</th>
                     <th class="w3-right-align">Durata (min)</th>
@@ -433,9 +320,9 @@
             <div class="w3-col m5">
                 <h3>Associazione professionale Fisiodomus</h3>
                 <h3>Via Garibaldi, 16</h3>
-                <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;Imola, Italy</p>
-                <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;+39&nbsp;391&nbsp;7057924</p>
-                <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;info@fisiodomus.it</p>
+                <p><i class="fa fa-map-marker fd-text-accent w3-xlarge"></i>&nbsp;&nbsp;Imola, Italy</p>
+                <p><i class="fa fa-phone fd-text-accent w3-xlarge"></i>&nbsp;&nbsp;+39&nbsp;391&nbsp;7057924</p>
+                <p><i class="fa fa-envelope-o fd-text-accent w3-xlarge"></i>&nbsp;&nbsp;info@fisiodomus.it</p>
                 <p>Forniscici nome, problematica e comune della vostra abitazione, vi ricontatteremo nelle 24h successive</p>
             </div>
             <!--<div class="w3-col m7">
@@ -454,7 +341,7 @@
                     </div>
                     <input class="w3-check" type="checkbox" checked="checked">
                     <label class="w3-validate">I Like it!</label>
-                    <button type="button" class="w3-btn w3-right w3-theme">Send</button>
+                    <button type="button" class="w3-btn w3-right w3-theme-light">Send</button>
                 </form>
             </div>-->
         </div>
@@ -494,18 +381,18 @@
         </div>
     </div>
     <!-- Footer -->
-    <footer class="w3-container w3-padding-16 w3-theme w3-center w3-small">
-        <h4>Follow Us <a class="w3-btn-floating w3-teal" href="https://www.facebook.com/fisiodomus.fisioterapiaadomicilio" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></h4>
+    <footer class="w3-container w3-padding-16 w3-theme-light w3-center w3-small">
+        <h4>Follow Us <a class="w3-btn w3-circle fd-accent" href="https://www.facebook.com/fisiodomus.it" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></h4>
         <p>
             Associazione professionale Fisiodomus<br />
             Via Garibaldi, 16 - 40026 Imola (BO) - Italy <br />
             Tel.&nbsp;+39&nbsp;391&nbsp;7057924&nbsp;-&nbsp;info@fisiodomus.it<br />
             C.F. 90050200378
         </p>
-        <p>&copy;2016 Associazione professionale Fisiodomus</p>
+        <p>&copy;2017 Associazione professionale Fisiodomus</p>
         <div id="GoTopBtn" style="position:relative;bottom:130px;z-index:1;" class="w3-tooltip w3-right">
-            <span class="w3-text w3-padding w3-teal">Go To Top</span>
-            <a class="w3-btn w3-theme" href="#fisoDomusPage">
+            <span class="w3-text w3-padding fd-accent">Go To Top</span>
+            <a class="w3-btn w3-theme-light" href="#">
                 <span class="w3-xlarge">
                     <i class="fa fa-chevron-circle-up"></i>
                 </span>

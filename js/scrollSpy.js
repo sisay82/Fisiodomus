@@ -1,5 +1,24 @@
 var affixSpies = [];
 
+switch (document.readyState) {
+    case "interactive":
+    case "complete":
+        if (typeof affixInit === "function") affixInit(event);
+        break;
+    default:
+        document.addEventListener("readystatechange", function (event) {
+            if (typeof affixInit === "function") affixInit(event);
+        });
+}
+
+
+window.addEventListener("resize", function () {
+    if (affixSpies && typeof affixSpies.affix === "function") affixSpies.affix();
+});
+window.addEventListener("scroll", function () {
+    if (affixSpies && typeof affixSpies.affix === "function") affixSpies.affix();
+});
+
 affixSpies.affix = function () {
     this.forEach(function (el) {
         if (el && el.rawSpyElement && el.headerLogoElement && el.homeLogoElement) {
@@ -52,7 +71,6 @@ affixSpies.affix = function () {
         }
     });
 };
-
 
 function affixInit(event) {
     var allElements = document.getElementsByTagName("*");
