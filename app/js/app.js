@@ -1,3 +1,8 @@
+'use strict';
+angular.module('fisioDomusApp', ['fisioDomusApp.whyFisioDomus']).controller('fisioDomusAppCtrl', function ($scope) {
+    $scope.currentYear = (new Date()).getFullYear();
+});
+
 var isOpen = false;
 
 function w3_open() {
