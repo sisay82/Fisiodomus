@@ -260,7 +260,7 @@
 <body id="fisoDomusPage" data-ng-app="fisioDomusApp" data-ng-controller="fisioDomusAppCtrl" class="w3-white no-js">
     <!-- Modal -->
     <!-- @todo move in a element directive with open close close command toogle short version top version repeat on the repeatble elment by json-->
-    <div id="privacyPopup" data-ng-if="openPrivacy" class="w3-modal" style="display:block;">
+    <div id="privacyPopup" data-ng-if="openPrivacy"  data-ng-cloak class="w3-modal" style="display:block;">
         <div class="w3-modal-content w3-card-8 fd-animate-zoom">
             <header class="w3-container w3-theme-l4">
                 <span data-ng-click="openPrivacy= !openPrivacy;" class="w3-closebtn">&times;</span>
