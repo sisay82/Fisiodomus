@@ -1,7 +1,7 @@
 'use strict';
 /* jshint browser:true */
 
-angular.module('fisioDomusApp', ['fisioDomusApp.whyFisioDomus'])
+angular.module('fisioDomusApp', ['fisioDomusApp.whyFisioDomus', 'fisioDomusApp.privacy', 'fisioDomusApp.accordion'])
 .controller('fisioDomusAppCtrl', function ($scope) {
     $scope.currentYear = (new Date()).getFullYear();
 });

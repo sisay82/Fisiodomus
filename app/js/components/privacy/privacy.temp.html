@@ -1,0 +1,268 @@
+<!-- Modal -->
+<!-- @todo move in a element directive with open close close command toogle short version top version repeat on the repeatble elment by json-->
+<div id="privacyPopup" data-ng-if="openPrivacy" class="w3-modal" style="display:block;">
+    <div class="w3-modal-content w3-card-8 fd-animate-zoom">
+        <header class="w3-container w3-theme-l4">
+            <span data-ng-click="ctrl.close();" class="w3-closebtn">&times;</span>
+            <h4 style="margin-bottom: 5px">Privacy Policy di
+                <strong>www.fisiodomus.it</strong>
+            </h4>
+            <p class="w3-medium w3-text-black-opacity" style="margin-top: 0px">Questa Applicazione raccoglie alcuni Dati Personali dei propri Utenti.</p>
+        </header>
+        <div class="w3-container" data-ng-if="fullPrivacy" style="max-height: 50vh;overflow-x: hidden;">
+            <ul class="w3-ul">
+                <li class="w3-row w3-padding-16 w3-left-align w3-large">
+                    <p>
+                        <strong>Titolare del Trattamento dei Dati</strong>
+                    </p>
+                    <p class="w3-medium w3-text-black-opacity" style="margin:0px 8px 8px">
+                        Associazione professionale Fisiodomus - Via Garibaldi, 16 - 40026 Imola (BO) - Italy
+                    </p>
+                    <p class="w3-medium w3-text-black-opacity" style="margin:8px">
+                        <strong>Indirizzo email del Titolare: </strong>info@fisiodomus.it
+                    </p>
+                </li>
+                <li class="w3-row w3-padding-16 w3-left-align w3-large">
+                    <p>
+                        <strong>Tipologie di Dati raccolti</strong>
+                    </p>
+                    <p class="w3-medium w3-text-black-opacity">
+                        Fra i Dati Personali raccolti da questa Applicazione, in modo autonomo o tramite terze parti, ci sono: Cookie, Dati di Utilizzo
+                        e email. </p>
+                    <p class="w3-medium w3-text-black-opacity">Dettagli completi su ciascuna tipologia di dati raccolti sono forniti nelle sezioni dedicate di questa
+                        privacy policy o mediante specifici testi informativi visualizzati prima della raccolta dei dati
+                        stessi.
+                        <br/> I Dati Personali possono essere liberamente forniti dall'Utente o, nel caso di Dati di Utilizzo,
+                        raccolti automaticamente durante l'uso di questa Applicazione.
+                        <br/> Tutti i Dati richiesti da questa Applicazione sono obbligatori e, in mancanza del loro conferimento,
+                        potrebbe essere impossibile per questa Applicazione fornire il servizio. Nei casi in cui questa Applicazione
+                        indichi alcuni Dati come facoltativi, gli Utenti sono liberi di astenersi dal comunicare tali Dati,
+                        senza che ciò abbia alcuna conseguenza sulla disponibilità del servizio o sulla sua operatività.
+                        <br/>Gli Utenti che dovessero avere dubbi su quali Dati siano obbligatori, sono incoraggiati a contattare
+                        il Titolare.
+                        <br/> L’eventuale utilizzo di Cookie - o di altri strumenti di tracciamento - da parte di questa Applicazione
+                        o dei titolari dei servizi terzi utilizzati da questa Applicazione, ove non diversamente precisato,
+                        ha la finalità di fornire il servizio richiesto dall'Utente, oltre alle ulteriori finalità descritte
+                        nel presente documento e nella Cookie Policy, se disponibile.
+                    </p>
+                    <p class="w3-medium w3-text-black-opacity">L'Utente si assume la responsabilità dei Dati Personali di terzi pubblicati o condivisi mediante questa
+                        Applicazione e garantisce di avere il diritto di comunicarli o diffonderli, liberando il Titolare
+                        da qualsiasi responsabilità verso terzi.
+                    </p>
+                </li>
+                <li class="w3-row w3-padding-16 w3-left-align w3-large">
+                    <p>
+                        <strong>Modalità e luogo del trattamento dei Dati raccolti</strong>
+                    </p>
+                    <p class="w3-medium w3-text-black-opacity">
+                        <strong>Modalità di trattamento</strong>
+                        <br/> Il Titolare tratta i Dati Personali degli Utenti adottando le opportune misure di sicurezza volte
+                        ad impedire l’accesso, la divulgazione, la modifica o la distruzione non autorizzate dei Dati Personali.
+                        Il trattamento viene effettuato mediante strumenti informatici e/o telematici, con modalità organizzative
+                        e con logiche strettamente correlate alle finalità indicate. Oltre al Titolare, in alcuni casi, potrebbero
+                        avere accesso ai Dati categorie di incaricati coinvolti nell’organizzazione del sito (personale amministrativo,
+                        commerciale, marketing, legali, amministratori di sistema) ovvero soggetti esterni (come fornitori
+                        di servizi tecnici terzi, corrieri postali, hosting provider, società informatiche, agenzie di comunicazione)
+                        nominati anche, se necessario, Responsabili del Trattamento da parte del Titolare. L’elenco aggiornato
+                        dei Responsabili potrà sempre essere richiesto al Titolare del Trattamento.
+                    </p>
+                    <p class="w3-medium w3-text-black-opacity">
+                        <strong>Luogo</strong>
+                        <br/> I Dati sono trattati presso le sedi operative del Titolare ed in ogni altro luogo in cui le parti
+                        coinvolte nel trattamento siano localizzate. Per ulteriori informazioni, contatta il Titolare.
+                    </p>
+                    <p class="w3-medium w3-text-black-opacity">
+                        <strong>Tempi</strong>
+                        <br/> I Dati sono trattati per il tempo necessario allo svolgimento del servizio richiesto dall’Utente,
+                        o richiesto dalle finalità descritte in questo documento, e l’Utente può sempre chiedere l’interruzione
+                        del Trattamento o la cancellazione dei Dati.
+                    </p>
+                </li>
+                <li class="w3-row w3-padding-16 w3-left-align w3-large">
+                    <p>
+                        <strong>Finalità del Trattamento dei Dati raccolti</strong>
+                    </p>
+                    <p class="w3-medium w3-text-black-opacity">
+                        I Dati dell’Utente sono raccolti per consentire al Titolare di fornire i propri servizi, così come per le seguenti finalità:
+                        Statistica, Visualizzazione di contenuti da piattaforme esterne, Gestione indirizzi e invio di messaggi
+                        email, Contattare l'Utente e Hosting ed infrastruttura backend.
+                    </p>
+                    <p class="w3-medium w3-text-black-opacity">
+                        Le tipologie di Dati Personali utilizzati per ciascuna finalità sono indicati nelle sezioni specifiche di questo documento.
+                    </p>
+                </li>
+                <li class="w3-row w3-padding-16 w3-left-align w3-large">
+                    <p>
+                        <strong>Dettagli sul trattamento dei Dati Personali</strong>
+                    </p>
+                    <p class="w3-medium w3-text-black-opacity">I Dati Personali sono raccolti per le seguenti finalità ed utilizzando i seguenti servizi:</p>
+                    <div data-ng-repeat="policy in ctrl.policyInfos" class="w3-row">
+                        <fd-accordion data-icon="{{ policy.icon }}" data-title="{{ policy.title}}">
+                            <p data-ng-repeat="line in policy.description" class="w3-medium w3-text-black-opacity">{{ line }}</p>
+                            <p data-ng-repeat="serviceDetail in policy.serivicesDetails" class="w3-medium w3-text-black-opacity" style="margin:0px 4px 4px">
+                                <strong>{{ serviceDetail.name }}</strong>
+                                <br/>
+                                <span data-ng-repeat="line in serviceDetail.description" class="w3-medium w3-text-black-opacity">{{ line }}</span>
+                                <br/>
+                                <br/>
+                                <span>Dati Personali: {{serviceDetail.dataTreated.join(', ');}}.</span>
+                                <br/>
+                                <span>Luogo del trattamento: {{serviceDetail.where}}</span>
+                                <span data-ng-if="serviceDetail.policyLink"> - </span>
+                                <a data-ng-if="serviceDetail.policyLink" href="{{ serviceDetail.policyLink }}" title="{{ serviceDetail.name }}" target="_blank"
+                                    rel="noopener">Privacy Policy</a>
+                                <span data-ng-if="serviceDetail.optionOut"> - </span>
+                                <a data-ng-if="serviceDetail.optionOut" href="{{ serviceDetail.optionOut }}" title="{{ serviceDetail.name }} option out"
+                                    target="_blank" rel="noopener">Option out</a>
+                            </p>
+                        </fd-accordion>
+                    </div>
+                </li>
+                <li class="w3-row w3-padding-16 w3-left-align w3-large">
+                    <p>
+                        <strong>Ulteriori informazioni sul trattamento</strong>
+                    </p>
+                    <p class="w3-medium w3-text-black-opacity">
+                        <strong>Difesa in giudizio</strong>
+                        <br/> I Dati Personali dell’Utente possono essere utilizzati da parte del Titolare in giudizio o nelle
+                        fasi propedeutiche alla sua eventuale instaurazione per la difesa da abusi nell'utilizzo di questa
+                        Applicazione o dei servizi connessi da parte dell’Utente.
+                        <br/>L’Utente dichiara di essere consapevole che al Titolare potrebbe essere richiesto di rivelare i Dati
+                        su richiesta delle pubbliche autorità.
+                    </p>
+                    <p class="w3-medium w3-text-black-opacity">
+                        <strong>Informative specifiche</strong>
+                        <br/> Su richiesta dell’Utente, in aggiunta alle informazioni contenute in questa privacy policy, questa
+                        Applicazione potrebbe fornire all'Utente delle informative aggiuntive e contestuali riguardanti servizi
+                        specifici, o la raccolta ed il trattamento di Dati Personali.
+                    </p>
+                    <p class="w3-medium w3-text-black-opacity">
+                        <strong>Log di sistema e manutenzione</strong>
+                        <br/> Per necessità legate al funzionamento ed alla manutenzione, questa Applicazione e gli eventuali
+                        servizi terzi da essa utilizzati potrebbero raccogliere Log di sistema, ossia file che registrano
+                        le interazioni e che possono contenere anche Dati Personali, quali l’indirizzo IP Utente.
+                    </p>
+                    <p class="w3-medium w3-text-black-opacity">
+                        <strong>Informazioni non contenute in questa policy</strong>
+                        <br/> Maggiori informazioni in relazione al trattamento dei Dati Personali potranno essere richieste in
+                        qualsiasi momento al Titolare del Trattamento utilizzando le informazioni di contatto.
+                    </p>
+                    <p class="w3-medium w3-text-black-opacity">
+                        <strong>Esercizio dei diritti da parte degli Utenti</strong>
+                        <br/> I soggetti cui si riferiscono i Dati Personali hanno il diritto in qualunque momento di ottenere
+                        la conferma dell'esistenza o meno degli stessi presso il Titolare del Trattamento, di conoscerne
+                        il contenuto e l'origine, di verificarne l'esattezza o chiederne l’integrazione, la cancellazione,
+                        l'aggiornamento, la rettifica, la trasformazione in forma anonima o il blocco dei Dati Personali
+                        trattati in violazione di legge, nonché di opporsi in ogni caso, per motivi legittimi, al loro trattamento.
+                        Le richieste vanno rivolte al Titolare del Trattamento.
+                        <br/>
+                        <br/>Questa Applicazione non supporta le richieste “Do Not Track”. Per conoscere se gli eventuali servizi
+                        di terze parti utilizzati le supportano, l'Utente è invitato a consultare le rispettive privacy policy.
+                    </p>
+                    <p class="w3-medium w3-text-black-opacity">
+                        <strong>Modifiche a questa privacy policy</strong>
+                        <br/> Il Titolare del Trattamento si riserva il diritto di apportare modifiche alla presente privacy policy
+                        in qualunque momento dandone pubblicità agli Utenti su questa pagina. Si prega dunque di consultare
+                        spesso questa pagina, prendendo come riferimento la data di ultima modifica indicata in fondo. Nel
+                        caso di mancata accettazione delle modifiche apportate alla presente privacy policy, l’Utente è tenuto
+                        a cessare l’utilizzo di questa Applicazione e può richiedere al Titolare del Trattamento di rimuovere
+                        i propri Dati Personali. Salvo quanto diversamente specificato, la precedente privacy policy continuerà
+                        ad applicarsi ai Dati Personali sino a quel momento raccolti.
+                    </p>
+                    <p class="w3-medium w3-text-black-opacity">
+                        <strong>Informazioni su questa privacy policy</strong>
+                        <br/> Il Titolare del Trattamento dei Dati è responsabile per questa privacy policy, redatta partendo
+                        da moduli predisposti da Iubenda e conservati sui suoi server.
+                    </p>
+                </li>
+                <li class="w3-row w3-padding-16 w3-left-align w3-large">
+                    <fd-accordion data-icon="fa-bookmark" data-title="Definizioni e riferimenti legali" class="w3-medium w3-text-black-opacity">
+                        <strong>Dati Personali (o Dati)</strong>
+                        <p>Costituisce dato personale qualunque informazione relativa a persona fisica, identificata o identificabile,
+                            anche indirettamente, mediante riferimento a qualsiasi altra informazione, ivi compreso un numero
+                            di identificazione personale.</p>
+
+                        <strong>Dati di Utilizzo</strong>
+                        <p>Sono le informazioni raccolte in maniera automatica da questa Applicazione (o dalle applicazioni
+                            di parti terze che questa Applicazione utilizza), tra le quali: gli indirizzi IP o i nomi a dominio
+                            dei computer utilizzati dall’Utente che si connette con questa Applicazione, gli indirizzi in
+                            notazione URI (Uniform Resource Identifier), l’orario della richiesta, il metodo utilizzato nel
+                            sottoporre la richiesta al server, la dimensione del file ottenuto in risposta, il codice numerico
+                            indicante lo stato della risposta dal server (buon fine, errore, ecc.) il paese di provenienza,
+                            le caratteristiche del browser e del sistema operativo utilizzati dal visitatore, le varie connotazioni
+                            temporali della visita (ad esempio il tempo di permanenza su ciascuna pagina) e i dettagli relativi
+                            all’itinerario seguito all’interno dell’Applicazione, con particolare riferimento alla sequenza
+                            delle pagine consultate, ai parametri relativi al sistema operativo e all’ambiente informatico
+                            dell’Utente.</p>
+
+                        <strong>Utente</strong>
+                        <p>L'individuo che utilizza questa Applicazione, che deve coincidere con l'Interessato o essere da questo
+                            autorizzato ed i cui Dati Personali sono oggetto del trattamento.</p>
+
+                        <strong>Interessato</strong>
+                        <p>La persona fisica o giuridica cui si riferiscono i Dati Personali.</p>
+
+                        <strong>Responsabile del Trattamento (o Responsabile)</strong>
+                        <p>La persona fisica, giuridica, la pubblica amministrazione e qualsiasi altro ente, associazione od
+                            organismo preposti dal Titolare al trattamento dei Dati Personali, secondo quanto predisposto
+                            dalla presente privacy policy.</p>
+
+                        <strong>Titolare del Trattamento (o Titolare)</strong>
+                        <p>La persona fisica, giuridica, la pubblica amministrazione e qualsiasi altro ente, associazione od
+                            organismo cui competono, anche unitamente ad altro titolare, le decisioni in ordine alle finalità,
+                            alle modalità del trattamento di dati personali ed agli strumenti utilizzati, ivi compreso il
+                            profilo della sicurezza, in relazione al funzionamento e alla fruizione di questa Applicazione.
+                            Il Titolare del Trattamento, salvo quanto diversamente specificato, è il proprietario di questa
+                            Applicazione.</p>
+
+                        <strong>Questa Applicazione</strong>
+                        <p>Lo strumento hardware o software mediante il quale sono raccolti i Dati Personali degli Utenti. </p>
+
+                        <strong>Cookie</strong>
+                        <p>Piccola porzione di dati conservata all'interno del dispositivo dell'Utente.</p>
+
+
+                        <hr>
+
+                        <strong>Riferimenti legali</strong>
+                        <p>Avviso agli Utenti europei: la presente informativa privacy è redatta in adempimento degli obblighi
+                            previsti dall’Art. 10 della Direttiva n. 95/46/CE, nonché a quanto previsto dalla Direttiva 2002/58/CE,
+                            come aggiornata dalla Direttiva 2009/136/CE, in materia di Cookie.</p>
+                        <p>Questa informativa privacy riguarda esclusivamente questa Applicazione.</p>
+                    </fd-accordion>
+                </li>
+            </ul>
+        </div>
+        <div class="w3-container" data-ng-if="!fullPrivacy" style="max-height: 50vh;overflow-x: hidden;">
+            <p>
+                <strong>Dati personali raccolti per le seguenti finalità ed utilizzando i seguenti servizi:</strong>
+            </p>
+            <ul class="w3-ul">
+                <li class="w3-row w3-padding-16 w3-left-align w3-large">
+                    <div data-ng-repeat="policy in ctrl.policyInfos" class="w3-half w3-row">
+                        <i class="w3-col fa w3-margin-4 w3-padding-4" data-ng-class='policy.icon' style="width: 20px" aria-hidden="true"></i>
+                        <div class="w3-rest w3-margin-4">
+                            <p class="w3-medium w3-margin-4">
+                                <strong>{{ policy.title }}</strong>
+                            </p>
+                            <p data-ng-repeat="serviceDetail in policy.serivicesDetails" class="w3-medium w3-text-black-opacity" style="margin:0px 4px 4px">
+                                <strong>{{ serviceDetail.name }}</strong>
+                                <br/>
+                                <span>Dati Personali: {{serviceDetail.dataTreated.join(', ');}}.</span>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <footer class="w3-container w3-theme-l4">
+            <div class="w3-row">
+                <p class="w3-small w3-half w3-left-align">Ultima modifica: 17 Gennaio 2018</p>
+                <a href="" data-ng-click="fullPrivacy= !fullPrivacy;" title="Visualizza la Privacy Policy Completa" class="w3-small w3-half w3-right-align">
+                    <p data-ng-if="fullPrivacy">Visualizza la Privacy Policy semplificata</p>
+                    <p data-ng-if="!fullPrivacy">Visualizza la Privacy Policy Completa</p>
+                </a>
+            </div>
+        </footer>
+    </div>
+</div>
