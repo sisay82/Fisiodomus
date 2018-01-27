@@ -1,0 +1,19 @@
+{
+  "name": "Associazione professionale Fisiodomus",
+  "short_name": "Fisiodomus",
+  "description": "Fisodomus - Servizi di Fisioterapia a domicilio",
+  "dir": "ltr",
+  "lang": "it",
+  "start_url": "/",
+  "orientation": "portrait-primary",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#009fe3",
+  "icons": [
+    {
+      "src": "image/homeScreen/logo72.png",
+      "sizes": "69x74",
+      "type": "image/png"
+    }
+  ]
+}

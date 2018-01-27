@@ -5,11 +5,13 @@
     <title>Fisiodomus</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#009fe3">
     <meta name="keywords" content="fisiodomus,fisioterapia,fisioterapista,fisioterapisti,domicilio,imola,bologna,budrio,emilia,romagna,casa,abitazione,riabilitazione,massaggio,riattivazioni,AIFi,libero professionista,professionale,riattivazione,post intervento,fisioterapia domiciliare,recupero motorio,post chirurgico,deambulazione,sindrome,allettamento,deficit,post trauma,terapia,manuale,evidence based medicine,EBM,decontratturante,esercizio,terapeutico,post intervento,programma esercizi,sensibilizzazione,ausilio,ausili,presidi,posture,letto,decubito,rischio caduta,salute,benessere,lombalgia,stress,dolore,fratture,infiammazione">
     <meta name="description" content="Fisodomus - Servizi di Fisioterapia a domicilio - Info e appuntamenti 3917057924 - info@fisiodomus.it">
     <meta name="author" content="Michele Geri">
     <base href="/">
     <link rel="icon" href="image/main/LogoIcona.png" type="image/png">
+    <link rel="manifest" href="/manifest.webmanifest">
 
     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700">
     <link type="text/css" rel="stylesheet" href="/css/w3.css">
@@ -291,12 +293,12 @@
         }
     </style>
 </head>
-<!--[if lt IE 7]>      <body id="fisoDomusPage" data-ng-app="fisioDomusApp" class="w3-white no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <body id="fisoDomusPage" data-ng-app="fisioDomusApp" class="w3-white no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <body id="fisoDomusPage" data-ng-app="fisioDomusApp" class="w3-white no-js lt-ie9"> <![endif]-->
+<!--[if lt IE 7]>      <body id="home" data-ng-app="fisioDomusApp" class="w3-white no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <body id="home" data-ng-app="fisioDomusApp" class="w3-white no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <body id="home" data-ng-app="fisioDomusApp" class="w3-white no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 
-<body id="fisoDomusPage" data-ng-app="fisioDomusApp" data-ng-controller="fisioDomusAppCtrl" class="w3-white no-js">
+<body id="home" data-ng-app="fisioDomusApp" data-ng-controller="fisioDomusAppCtrl" class="w3-white no-js">
     <!--<![endif]-->
     <header class="w3-theme-light w3-card-4 w3-top">
         <a href="/">
@@ -527,23 +529,23 @@
             <div class="w3-col m6">
                 <form class="w3-form" data-ng-submit="openPrivacy=!openPrivacy;">
                     <div class="w3-input-group">
-                        <input class="w3-input" style="width:100%;" type="text" required="">
+                        <input class="w3-input" style="width:100%;" type="text" required="" aria-label="Nome">
                         <label class="w3-label fd-text-accent w3-validate">Nome</label>
                     </div>
                     <div class="w3-input-group">
-                        <input class="w3-input" style="width:100%;" type="text" required="">
+                        <input class="w3-input" style="width:100%;" type="text" required="" aria-label="Email">
                         <label class="w3-label fd-text-accent w3-validate">Email</label>
                     </div>
                     <div class="w3-input-group">
-                        <input class="w3-input" style="width:100%;" type="text" required="">
+                        <input class="w3-input" style="width:100%;" type="text" required="" aria-label="Telefono">
                         <label class="w3-label fd-text-accent w3-validate">Telefono</label>
                     </div>
                     <div class="w3-input-group">
-                        <textarea class="w3-input" style="width:100%;"></textarea>
+                        <textarea class="w3-input" style="width:100%;" required="" aria-label="Richiesta"></textarea>
                         <label class="w3-label fd-text-accent">Richiesta/descrizione del problema</label>
                     </div>
                     <div class="w3-input-group">
-                            <input class="w3-check" type="checkbox" checked="checked" required="">
+                            <input class="w3-check" type="checkbox" checked="checked" required="" aria-label="Accettazione Privacy">
                             <label>Accetta la normativa sulla <a data-ng-click="openPrivacy=!openPrivacy;"  class="fd-text-accent" style="cursor:pointer">Privacy</a></label>
                     </div>
                     <button type="submit" class="w3-btn w3-right fd-accent w3-theme-light">Invia</button>
@@ -585,7 +587,7 @@
         <p data-ng-cloak>&copy;{{currentYear}} Associazione professionale Fisiodomus</p>
         <div id="GoTopBtn" style="position:relative;bottom:130px;z-index:1;" class="w3-tooltip w3-right">
             <span class="w3-text w3-padding fd-accent">Go To Top</span>
-            <a class="w3-btn w3-theme-light" href="#">
+            <a class="w3-btn w3-theme-light" href="#home">
                 <span class="w3-xlarge">
                     <i class="fa fa-chevron-circle-up"></i>
                 </span>
