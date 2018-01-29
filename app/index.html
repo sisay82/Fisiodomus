@@ -527,29 +527,7 @@
                 <p>Forniscici nome, problematica e comune della vostra abitazione, vi ricontatteremo nelle 24h successive</p>
             </div>
             <div class="w3-col m6">
-                <form class="w3-form" data-ng-submit="openPrivacy=!openPrivacy;">
-                    <div class="w3-input-group">
-                        <input class="w3-input" style="width:100%;" type="text" required="" aria-label="Nome">
-                        <label class="w3-label fd-text-accent w3-validate">Nome</label>
-                    </div>
-                    <div class="w3-input-group">
-                        <input class="w3-input" style="width:100%;" type="text" required="" aria-label="Email">
-                        <label class="w3-label fd-text-accent w3-validate">Email</label>
-                    </div>
-                    <div class="w3-input-group">
-                        <input class="w3-input" style="width:100%;" type="text" required="" aria-label="Telefono">
-                        <label class="w3-label fd-text-accent w3-validate">Telefono</label>
-                    </div>
-                    <div class="w3-input-group">
-                        <textarea class="w3-input" style="width:100%;" required="" aria-label="Richiesta"></textarea>
-                        <label class="w3-label fd-text-accent">Richiesta/descrizione del problema</label>
-                    </div>
-                    <div class="w3-input-group">
-                            <input class="w3-check" type="checkbox" checked="checked" required="" aria-label="Accettazione Privacy">
-                            <label>Accetta la normativa sulla <a data-ng-click="openPrivacy=!openPrivacy;"  class="fd-text-accent" style="cursor:pointer">Privacy</a></label>
-                    </div>
-                    <button type="submit" class="w3-btn w3-right fd-accent w3-theme-light">Invia</button>
-                </form>
+                <fd-contacts></fd-contacts>
             </div>
         </div>
     </div>
@@ -607,6 +585,7 @@
     <!-- custom library -->
     <script src="/js/app.js"></script>
     <script src="/js/whyFisioDomusController.js"></script>
+    <script src="/js/components/contacts/contacts.js"></script>
     <script src="/js/components/accordion/accordion.js"></script>
     <script src="/js/components/privacy/privacy.js"></script>
     <script src="/js/maps.js"></script>

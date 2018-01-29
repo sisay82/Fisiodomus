@@ -1,0 +1,54 @@
+<form class="w3-form" name="contactForm"  data-ng-submit="openPrivacy=!openPrivacy;">
+    <div class="w3-row w3-section">
+        <div class="w3-col" style="width:32px">
+            <i class="w3-xlarge w3-padding-8 fd-text-accent fa fa-user"></i>
+        </div>
+        <div class="w3-rest ">
+            <div class="w3-half w3-row-padding">
+                <input class="w3-input w3-border w3-round" name="firstname" type="text" data-ng-model="user.firstname" required placeholder="Nome"
+                    aria-label="Nome">
+            </div>
+            <div class="w3-half w3-row-padding">
+                <input class="w3-input w3-border w3-round" name="surname" type="text" data-ng-model="user.surname" required placeholder="Cognome"
+                    aria-label="Cognome">
+            </div>
+        </div>
+    </div>
+    <div class="w3-row w3-section">
+        <div class="w3-col" style="width:32px">
+            <i class="w3-xlarge w3-padding-8 fd-text-accent fa fa-envelope-o"></i>
+        </div>
+        <div class="w3-rest w3-row-padding">
+            <input class="w3-input w3-border w3-round" name="email" type="text" data-ng-model="user.email" required placeholder="Email"
+                aria-label="Email">
+        </div>
+    </div>
+    <div class="w3-row w3-section">
+        <div class="w3-col" style="width:32px">
+            <i class="w3-xlarge w3-padding-8 fd-text-accent fa fa-phone"></i>
+        </div>
+        <div class="w3-rest w3-row-padding">
+            <input class="w3-input w3-border w3-round" name="phoneNumber" type="text" data-ng-model="user.phoneNumber" required placeholder="Telefono"
+                aria-label="Telefono">
+        </div>
+    </div>
+    <div class="w3-row w3-section">
+        <div class="w3-col" style="width:32px">
+            <i class="w3-xlarge w3-padding-8 fd-text-accent fa fa-pencil"></i>
+        </div>
+        <div class="w3-rest  w3-row-padding">
+            <textarea class="w3-input w3-border w3-round" name="message" data-ng-model="user.message" required placeholder="Richiesta/Descrizione del problema"
+                aria-label="Richiesta"></textarea>
+        </div>
+    </div>
+    <div class="w3-row w3-section">
+        <div class="w3-row-padding" style="margin-left:32px">
+            <input class="w3-check" type="checkbox" checked="checked" data-ng-model="user.privacyAgree" required aria-label="Accettazione Privacy">
+            <label>Accetta la normativa sulla
+                <a data-ng-click="ctrl.openPrivacy()" class="fd-text-accent" style="cursor:pointer">Privacy</a>
+            </label>
+        </div>
+    </div>
+
+    <button type="submit" class="w3-btn w3-right fd-accent w3-theme-light" data-ng-disabled="contactForm.$invalid">Invia</button>
+</form>

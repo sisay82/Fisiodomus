@@ -8,20 +8,20 @@
         .directive("fdPrivacy", privacyDirective)
         .controller('privacyCtrl', privacyCtrlFn);
 
-    function privacyDirective(){
+    function privacyDirective() {
         return {
-            scope:{
+            scope: {
                 openPrivacy: '=open'
             },
             restrict: 'E',
             templateUrl: '/js/components/privacy/privacy.temp.html',
-            controller:'privacyCtrl',
+            controller: 'privacyCtrl',
             controllerAs: 'ctrl'
-        };     
+        };
     }
 
     function privacyCtrlFn($scope) {
-        var self= this;
+        var self = this;
         self.policyInfos = [
             {
                 category: 'statistic',
@@ -41,7 +41,7 @@
                 category: 'contents',
                 icon: 'fa-file',
                 title: 'Visualizzazione di contenuti da piattaforme esterne',
-                description: ["Questo tipo di servizi permette di visualizzare contenuti ospitati su piattaforme esterne direttamente dalle pagine di questa Applicazione e di interagire con essi."," Nel caso in cui sia installato un servizio di questo tipo, è possibile che, anche nel caso gli Utenti non utilizzino il servizio, lo stesso raccolga dati di traffico relativi alle pagine in cui è installato."],
+                description: ["Questo tipo di servizi permette di visualizzare contenuti ospitati su piattaforme esterne direttamente dalle pagine di questa Applicazione e di interagire con essi.", " Nel caso in cui sia installato un servizio di questo tipo, è possibile che, anche nel caso gli Utenti non utilizzino il servizio, lo stesso raccolga dati di traffico relativi alle pagine in cui è installato."],
                 serivicesDetails: [{
                     name: "Widget Google Maps",
                     company: "Google Inc.",
@@ -55,7 +55,7 @@
                 category: 'contacts',
                 icon: 'fa-address-card',
                 title: 'Gestione contatti e invio di messaggi',
-                description: ["Questo tipo di servizi consente di gestire un database di contatti email, contatti telefonici o contatti di qualunque altro tipo, utilizzati per comunicare con l’Utente.","Questi servizi potrebbero inoltre consentire di raccogliere dati relativi alla data e all’ora di visualizzazione dei messaggi da parte dell’Utente, così come all’interazione dell'Utente con essi, come le informazioni sui click sui collegamenti inseriti nei messaggi."],
+                description: ["Questo tipo di servizi consente di gestire un database di contatti email, contatti telefonici o contatti di qualunque altro tipo, utilizzati per comunicare con l’Utente.", "Questi servizi potrebbero inoltre consentire di raccogliere dati relativi alla data e all’ora di visualizzazione dei messaggi da parte dell’Utente, così come all’interazione dell'Utente con essi, come le informazioni sui click sui collegamenti inseriti nei messaggi."],
                 serivicesDetails: [{
                     name: "MailChimp",
                     company: "The Rocket Science Group, LLC.",
@@ -68,6 +68,10 @@
             }
 
         ];
-        self.close = function(){ $scope.openPrivacy=!$scope.openPrivacy; };
+        self.close = function () { $scope.openPrivacy = !$scope.openPrivacy; };
+
+        $scope.$on('openPrivacyRequest', function (event, data) {
+            $scope.openPrivacy = $scope.openPrivacy || true;
+        });
     }
 })();
