@@ -1,16 +1,38 @@
-<form class="w3-form" name="contactForm"  data-ng-submit="openPrivacy=!openPrivacy;">
+<style>
+    .w3-input.ng-invalid.ng-touched {
+        border-color: #dc3545;
+    }
+</style>
+<form class="w3-form" name="contactForm" data-ng-submit="openPrivacy=!openPrivacy;">
     <div class="w3-row w3-section">
         <div class="w3-col" style="width:32px">
             <i class="w3-xlarge w3-padding-8 fd-text-accent fa fa-user"></i>
         </div>
         <div class="w3-rest ">
             <div class="w3-half w3-row-padding">
-                <input class="w3-input w3-border w3-round" name="firstname" type="text" data-ng-model="user.firstname" required placeholder="Nome"
-                    aria-label="Nome">
+                <input class="w3-input" name="firstname" type="text" data-ng-model="user.firstname" required placeholder="Nome" aria-label="Nome">
+                <div class="error-container" role="alert" ng-show="contactForm.firstname.$dirty && contactForm.firstname.$invalid">
+                    <b class="w3-text-red w3-small" ng-show="contactForm.firstname.$error.required">Inserire il nome</b>
+                </div>
             </div>
             <div class="w3-half w3-row-padding">
-                <input class="w3-input w3-border w3-round" name="surname" type="text" data-ng-model="user.surname" required placeholder="Cognome"
-                    aria-label="Cognome">
+                <input class="w3-input" name="surname" type="text" data-ng-model="user.surname" required placeholder="Cognome" aria-label="Cognome">
+                <div class="error-container" role="alert" ng-show="contactForm.surname.$dirty && contactForm.surname.$invalid">
+                    <b class="w3-text-red w3-small" ng-show="contactForm.surname.$error.required">Inserire il cognome.</b>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row w3-section">
+        <div class="w3-col" style="width:32px">
+            <i class="w3-xlarge w3-padding-8 fd-text-accent fa fa-phone"></i>
+        </div>
+        <div class="w3-rest w3-row-padding">
+            <input class="w3-input" name="phoneNumber" type="text" data-ng-model="user.phoneNumber" required placeholder="Telefono" aria-label="Telefono">
+            <div class="error-container" role="alert" ng-show="contactForm.phoneNumber.$dirty && contactForm.phoneNumber.$invalid">
+                <b class="w3-text-red w3-small" ng-show="contactForm.phoneNumber.$error.required">Inserire il numero.</b>
+                <b class="w3-text-red w3-small" ng-show="contactForm.phoneNumber.$error.pattern">Inserire un numero di telefono valido.</b>
+                <b class="w3-text-red w3-small" ng-show="contactForm.phoneNumber.$error.maxlength">La lunghezza massima è di 100 caratteri.</b>
             </div>
         </div>
     </div>
@@ -19,17 +41,13 @@
             <i class="w3-xlarge w3-padding-8 fd-text-accent fa fa-envelope-o"></i>
         </div>
         <div class="w3-rest w3-row-padding">
-            <input class="w3-input w3-border w3-round" name="email" type="text" data-ng-model="user.email" required placeholder="Email"
-                aria-label="Email">
-        </div>
-    </div>
-    <div class="w3-row w3-section">
-        <div class="w3-col" style="width:32px">
-            <i class="w3-xlarge w3-padding-8 fd-text-accent fa fa-phone"></i>
-        </div>
-        <div class="w3-rest w3-row-padding">
-            <input class="w3-input w3-border w3-round" name="phoneNumber" type="text" data-ng-model="user.phoneNumber" required placeholder="Telefono"
-                aria-label="Telefono">
+            <input class="w3-input" name="email" type="text" data-ng-model="user.email" data-ng-maxlength="100" data-ng-pattern='/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i'
+                required placeholder="Email [nome@dominio.it]" aria-label="Email">
+            <div class="error-container" role="alert" ng-show="contactForm.email.$dirty && contactForm.email.$invalid">
+                <b class="w3-text-red w3-small" ng-show="contactForm.email.$error.required">Inserire la mail.</b>
+                <b class="w3-text-red w3-small" ng-show="contactForm.email.$error.pattern">Inserire un indirizzo mail valido (user@dominio.it).</b>
+                <b class="w3-text-red w3-small" ng-show="contactForm.email.$error.maxlength">La lunghezza massima è di 100 caratteri.</b>
+            </div>
         </div>
     </div>
     <div class="w3-row w3-section">
@@ -37,7 +55,7 @@
             <i class="w3-xlarge w3-padding-8 fd-text-accent fa fa-pencil"></i>
         </div>
         <div class="w3-rest  w3-row-padding">
-            <textarea class="w3-input w3-border w3-round" name="message" data-ng-model="user.message" required placeholder="Richiesta/Descrizione del problema"
+            <textarea class="w3-input" name="message" data-ng-model="user.message" required placeholder="Richiesta/Descrizione del problema"
                 aria-label="Richiesta"></textarea>
         </div>
     </div>
