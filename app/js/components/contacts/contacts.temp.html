@@ -7,7 +7,7 @@
         box-shadow: inset 0px 0px 1px 2px #dc3545;
     }
 </style>
-<form class="w3-form" name="contactForm" data-ng-submit="openPrivacy=!openPrivacy;">
+<form class="w3-form" name="contactForm" data-ng-submit="ctrl.submitContactReq(contactForm.$valid);">
     <div class="w3-row w3-section">
         <div class="w3-col" style="width:32px">
             <i class="w3-xlarge w3-padding-8 fd-text-accent fa fa-user"></i>
